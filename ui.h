@@ -1,4 +1,3 @@
-
 #ifndef UI_H
 #define UI_H
 
@@ -16,5 +15,9 @@ void display_room_operations_menu(void);
 
 // Display rooms in table format
 void display_room_table(RoomList *list, int filter);
+
+// Helper display text functions
+const char *get_room_status(RoomStatus status);
+const char *get_room_type(RoomType type);
 
 #endif
